@@ -21,7 +21,7 @@ const Home = () => {
     setPrompt("");
     try {
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDYw35R2kuEu8PGWxyC2pSxFhQsHg6qD-w",
+        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=Your-api-key",
         method: "post",
         data: {
           contents: [{ parts: [{ text: prompt }] }],
